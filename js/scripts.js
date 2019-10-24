@@ -2,22 +2,26 @@ $(document).ready(function() {
   $("form#form1").submit(function(event) {
 
     var prefer = $("input:radio[name=preference]:checked").val();
+      console.log(prefer)
     var likely = $("input:radio[name=likely]:checked").val();
-    console.log(prefer)
 
     event.preventDefault();
 
-    if (prefer === "Eat Ice Cream Upside Down" && likely === "Go Skinny Dipping in Antarctica") {
-      $(".job").text("Foot Massage Therapist");
+    if (prefer === "ice-cream" && likely === "antarctica") {
+      $("#job").text("Foot Massage Therapist");
+      console.log("job")
     }
-    else if (prefer === "Eat Ice Cream Upside Down" && likely === "Go Skydiving While On Acid") {
-      $(".job").text("Rock Hound");
+    else if (prefer === "ice-cream" && likely === "skydiving") {
+      $("#job").text("Rock Hound");
+      console.log("job2")
     }
-    else if (prefer === "Makeout With a Clown" && likely === "Go Skinny Dipping in Antarctica") {
-      $(".job").text("Geriatric Servant");
+    else if (prefer === "clown" && likely === "antarctica") {
+      $("#job").text("Geriatric Servant");
+      console.log("job3")
     }
-    else if (prefer === "Makeout With a Clown" && likely === "Go Skydiving While On Acid") {
-      $(".job").text("Graveyard Receptionist");
+    else if (prefer === "clown" && likely === "skydiving") {
+      $("#job").text("Graveyard Receptionist");
+      console.log("job4")
     }
   });
 });
