@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Job Match</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Job Match</title>
+</head>
+<body>
+  <div class="container">
 
-  </body>
+    <div class="container">
+      <h1>Answer the Questions to Find Your Perfect Job</h1>
+    </div>
+    <div class="container">
+      <h3>Which would you prefer?</h3>
+      <form id="form1">
+        <div class="form-check">
+          <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="preference" id="ice-cream" value="ice-cream" checked>
+            Eat Ice Cream Upside Down
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="exampleRadios2">
+            <input class="form-check-input" type="radio" name="preference" id="clown" value="clown">
+            Makeout With a Clown
+          </label>
+        </div>
+
+        <h3>What are you more likely to do?</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="likely" id="antarctica" value="antarctica" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Go Skinny Dipping in Antarctica
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="likely" id="skydiving" value="skydiving">
+          <label class="form-check-label" for="exampleRadios2">
+            Go Skydiving While On Acid
+          </label>
+        </div>
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+    <br>
+    <h2>You should become a <span class="job"></span></h2>
+  </div>
+
+</body>
 </html>
